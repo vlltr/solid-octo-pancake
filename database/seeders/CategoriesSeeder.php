@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Coderflex\LaravelTicket\Models\Category;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -24,7 +23,7 @@ class CategoriesSeeder extends Seeder
         ];
 
         foreach ($categories as $category) {
-            Category::create([
+            \App\Models\Category::create([
                 'name' => $category
             ]);
         }

@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Coderflex\LaravelTicket\Models\Label;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -23,7 +22,7 @@ class LabelsSeeder extends Seeder
         ];
 
         foreach ($labels as $label) {
-            Label::create([
+            \App\Models\Label::create([
                 'name' => $label
             ]);
         }
