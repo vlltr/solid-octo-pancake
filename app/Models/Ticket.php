@@ -2,10 +2,8 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Coderflex\LaravelTicket\Models\Ticket as CoderFlexTicket;
 
-class Ticket extends Model
+class Ticket extends CoderFlexTicket
 {
-    use HasFactory;
 }
